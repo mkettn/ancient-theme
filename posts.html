@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+<a href="/tag/{{ tag | first | replace: ' ', '%20'}}">{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }}){% unless forloop.last %}, {% endunless %}</a>
+{% endfor %}
+
+<h2>Posts</h2>
+<ul>
+    {% for post in site.posts %}
+    <li><a style="color: black;" href="{{ site.baseurl }}{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time> {{ post.title }}</a></li>
+    {% endfor %}
+</ul>
