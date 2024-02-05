@@ -32,3 +32,10 @@ section {
 footer {
     text-align: right;
 }
+
+hr {
+    display:block;
+    border: 0px;
+    height: 60pt;
+    background: no-repeat url("ornate.svg") center;
+}
