@@ -27,7 +27,7 @@ def embedfont(ifp, ofd):
           file=ofd, end='')
     with open(ifp, "rb") as fd:
         print(b64encode(fd.read()).decode().strip(), file=ofd, end='')
-    print(");}}", file=ofd)
+    print(");}", file=ofd)
 
 if ARGS["-o"]:
     with open(ARGS["-o"], 'w') as ofd:
