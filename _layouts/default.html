@@ -12,12 +12,11 @@
 	<link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}"/>
 	{% endif %}
 	{% include head-custom.html %}
+	<title>{{ page.title }} | {{ site.title }} </title>
   </head>
   <body>
       <header>
-	  {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="{{ site.logo-alt | default: 'Logo' }}" />
-          {% endif %}
+	  {% if site.logo %}<a href="{{ site.url | append: site.baseurl}}"><img id="logo" src="{{site.logo | relative_url}}" alt="{{ site.logo-alt | default: 'Logo' }}" /></a>{% endif %}
 	  <div id="tbox">
               <span id="title">{{ site.title }}</span>
 	      {% if site.description %}

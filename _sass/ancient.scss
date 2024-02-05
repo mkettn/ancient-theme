@@ -1,4 +1,5 @@
 @import "carolingia";
+@import "yinit";
 
 body {
     font-family: serif;
@@ -12,7 +13,7 @@ header {
     grid-template-columns: auto 2fr;
     grid-gap: 1em;
 }
-header > img {
+#logo {
     width: 50pt;
 }
 #tbox {
@@ -38,4 +39,10 @@ hr {
     border: 0px;
     height: 60pt;
     background: no-repeat url("ornate.svg") center;
+}
+h1 + p::first-letter {
+    initial-letter: 3;
+    color: crimson;
+    font-family: 'yinit', serif;
+    text-transform: uppercase;
 }
