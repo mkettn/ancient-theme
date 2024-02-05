@@ -1,3 +1,10 @@
 title: Ancient theme
 logo: /assets/logo.svg
 description: Ancient is a theme for GitHub Pages.
+
+remote_theme: mkettn/ancient-theme
+
+
+header_pages:
+  - about.md
+  - another-page.md
