@@ -1,9 +1,10 @@
 @import "carolingia";
 @import "yinit";
+@import "highlight";
 
 body {
     font-family: serif;
-    background-color: beige;
+    background-color: linen;
     margin: 0 auto 0 auto;
     max-width: 800px;
 }
@@ -23,10 +24,11 @@ header {
 #title {
     font-family: 'carolingia', serif;
     font-size: 40pt;
+    color: crimson;
 }
 
-section {
-    background-color: khaki;
+main {
+    background-color: AntiqueWhite;
     padding: 5pt;
 }
 footer {
@@ -47,9 +49,24 @@ hr::after {
     filter: invert(15%) sepia(83%) saturate(3657%) hue-rotate(337deg) brightness(101%) contrast(100%);
 }
 
+h1,h2,h3,h4,h5 {
+    color: crimson;
+}
+
 h1 + p::first-letter {
     initial-letter: 3;
     color: crimson;
     font-family: 'yinit', serif;
     text-transform: uppercase;
+}
+
+h2 + p::first-letter,
+h3 + p::first-letter {
+    color: crimson;
+    font-variant: small-caps;
+}
+ul {
+    li::marker {
+	color: crimson;
+    }
 }
