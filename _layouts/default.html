@@ -20,15 +20,15 @@
 	  <div id="tbox">
               <span id="title">{{ site.title }}</span>
 	      {% if site.description %}
-              <p>{{ site.description }}</p>
+              <p id="description">{{ site.description }}</p>
 	      {% endif %}
 	  </div>
       </header>
 	  {% include header_pages.html %}
-      <section>
+      <main>
       {{ content }}
-      </section>
-      <footer>{% include footer-custom.html %}</footer>
+      </main>
+      <footer>{% include footer-custom.html %} <div>{% include footer_pages.html %}</div></footer>
     </div>
   </body>
 </html>

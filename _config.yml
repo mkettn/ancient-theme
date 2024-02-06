@@ -8,3 +8,6 @@ remote_theme: mkettn/ancient-theme
 header_pages:
   - about.md
   - another-page.md
+
+footer_pages:
+  - tos.md
