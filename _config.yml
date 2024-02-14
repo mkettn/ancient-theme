@@ -4,6 +4,8 @@ description: Ancient is a theme for GitHub Pages.
 
 remote_theme: mkettn/ancient-theme
 
+#lnurl: yourname@yournode.com
+#lnurl: LNURL....
 
 header_pages:
   - index.md
