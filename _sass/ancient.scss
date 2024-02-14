@@ -1,7 +1,7 @@
 @import "carolingia";
 @import "yinit";
 @import "highlight";
-
+@import "nav";
 body {
     font-family: serif;
     background-color: linen;
@@ -33,12 +33,13 @@ main {
 }
 footer {
     text-align: right;
+    background-color: silver;
 }
-
+nav {
+    background-color: silver;
+}
 hr {
     border: 0px;
-}
-hr::after {
     display: block;
     width: 200pt;
     margin-left: auto;

@@ -1,0 +1,51 @@
+nav {
+    ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	li {
+	    float: left;
+	}
+    }
+
+    li a, .dropbtn {
+	display: inline-block;
+	text-align: center;
+	padding: 5pt 5pt;
+    }
+
+    li.dropdown {
+	display: inline-block;
+    }
+
+    .dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 100pt;
+	z-index: 1;
+	background-color: linen;
+	li {
+	    float: none;
+	}
+    }
+
+    .dropdown-content a {
+	padding: 5pt 5pt;
+	display: block;
+	text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+	display: block;
+    }
+    a {
+	text-decoration: none;
+	color: black;
+    }
+    a:visited {
+	color: black;
+    }
+}
+
+
